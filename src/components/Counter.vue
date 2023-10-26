@@ -2,6 +2,7 @@
   <div class="counter">
     Counter: {{ valueInternal }}<br />
     <button type="button" @click.stop="valueInternal++">Add</button>&nbsp;
+    <slot></slot>
     <button type="button" @click.stop="valueInternal--">Sub</button>
   </div>
 </template>
